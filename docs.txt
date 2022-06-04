@@ -1,0 +1,32 @@
+- Tạo name, email để định danh thanh viên
+    git config --global user.name 'Danh'
+    git config --global user.email 'congdanh@gmail.com'
+
+- Khởi tạo repo trên local
+    git init
+    * lưu ý: phải tạo name, email trước khi init thì git mới nhận dạng được các commit của bạn tương tác, ngược lại git sẽ lấy tài tương tác bằng tài khoản git bạn đã đăng nhập
+
+- Ánh xạ lên repo trên server
+    git remote add origin https://github.com/congdanh2516/test.git
+    git branch -M main
+    git push -u origin main(branch)
+
+- Xem tình trạng các tập tin, thư mục trong dự án thay đổi nhưng chưa được add, commit vào repo local
+    git status
+
+- Thêm/cập nhật thay đổi vào repo local
+    git add file_name hoặc git add . để thêm tất cả
+    git commit -m "statement"
+
+- Cập nhật lên repo server
+    git push hoặc git push -u origin main/admin/...
+
+- Liệt kê các branch và xem branch đạng ở hiện tại
+    git branch
+
+- Tạo branch mới
+    git branch branch_name
+    git checkout -b branch_name
+
+- Chuyển branch 
+    git checkout branch_name
